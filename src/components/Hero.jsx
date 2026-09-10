@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { profile } from '../data/portfolio'
 import { ExternalLink } from './ExternalLink'
 
@@ -14,7 +15,14 @@ export function Hero() {
             <span>001</span>
           </p>
           <h1 id="hero-title">{profile.name}</h1>
-          <p className="hero__role">{profile.title}</p>
+          <p className="hero__role">
+            {profile.title.split(' | ').map((part, index) => (
+              <Fragment key={part}>
+                {index > 0 && ' | '}
+                <span className="hero__headline-part">{part}</span>
+              </Fragment>
+            ))}
+          </p>
           <p className="hero__statement">{profile.statement}</p>
 
           <div className="hero__links" aria-label="Featured links">

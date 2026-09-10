@@ -2,6 +2,8 @@
 
 Personal portfolio for Rongzhe (Rob) Zhao, built with React and Vite and configured for GitHub Pages at [rstationpro.github.io](https://rstationpro.github.io).
 
+**Health Data Science PhD Student | Machine Learning & AI | Statistical Modeling**
+
 ## Local development
 
 Requirements: a current Node.js LTS release and npm.
@@ -66,7 +68,9 @@ Replace:
 public/Rongzhe_Zhao_Resume.pdf
 ```
 
-Keep the same filename to avoid editing code. If the filename changes, update `profile.resume` in `src/data/portfolio.js`.
+This is an identical copy of the canonical `Master_Resume/Resume_Rob_Zhao_Tech_Research.pdf` from the resume repository. Recompile that source, then replace this copy. Keep the same filename to preserve existing URLs.
+
+The hero, view, and download links all use `profile.resume` in `src/data/portfolio.js`, which resolves to `/Rongzhe_Zhao_Resume.pdf`. The navbar's Resume item navigates to the section containing those links. Do not add a second public resume file or hard-code a different PDF in a component.
 
 ## Add a headshot
 

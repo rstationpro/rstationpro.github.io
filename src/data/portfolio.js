@@ -2,9 +2,9 @@ export const profile = {
   name: 'Rongzhe (Rob) Zhao',
   preferredName: 'Rongzhe (Rob) Zhao',
   initials: 'RZ',
-  title: 'PhD Student in Health Data Science · Machine Learning & AI Researcher',
+  title: 'Health Data Science PhD Student | Machine Learning & AI | Statistical Modeling',
   statement:
-    'My work focuses on interpretable and trustworthy machine learning, with current interests in multimodal AI, Video-LLMs, and healthcare applications.',
+    'My work connects statistical modeling, machine learning, and applied AI, with current interests in multimodal/Video-LLM evaluation, interpretability, and healthcare applications.',
   location: 'George Washington University · Washington, DC',
   email: 'robzhao7@outlook.com',
   github: 'https://github.com/rstationpro',
@@ -15,7 +15,7 @@ export const profile = {
 }
 
 export const about = [
-  'I am a Health Data Science PhD student at George Washington University, trained in statistics and biostatistics and working across machine learning, artificial intelligence, and applied health research. I work with Dr. Fang Jin in the Data Discovery Lab.',
+  'I am a Health Data Science PhD student at George Washington University. My training in statistics and probability and biostatistics forms the foundation for my work in statistical modeling, machine learning, and applied AI. I work with Dr. Fang Jin in the Data Discovery Lab.',
   'My approach combines careful study design and statistical reasoning with modern ML workflows. I am especially interested in how multimodal models arrive at decisions, what interpretability evidence can support, and how reliable methods translate to consequential domains such as healthcare.',
 ]
 

@@ -318,6 +318,10 @@ ul {
   line-height: 1.45;
 }
 
+.hero__headline-part {
+  white-space: nowrap;
+}
+
 .hero__statement {
   max-width: 690px;
   margin-top: 22px;

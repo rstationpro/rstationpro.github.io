@@ -5,6 +5,7 @@ Reviewed September 10, 2026. This file is an editorial checklist and is not part
 ## Owner confirmations
 
 - Display name: **Rongzhe (Rob) Zhao**, used throughout the site and page metadata.
+- Professional headline: **Health Data Science PhD Student | Machine Learning & AI | Statistical Modeling**. This describes professional positioning; all official degree names and the Biostatistics Track remain unchanged.
 - Driving project: participation in **Phase 1 statistical analysis**, including data cleaning and applying **generalized linear models** to examine associations between driving behaviors and violations. The study is confidential; only this high-level account is included. No underlying data, code, reports, sample sizes, tools, model specifications, or numerical results are requested or published. The former physiological-signal and stress-classification descriptions were unsupported and have been removed, including their diagram. The entry makes no claim about project completion or dates.
 - AWS project: **shared design of the full system**, applying AWS tools learned in a class to develop a working system. The website credits team design without assigning sole ownership of individual components. Architecture details and the existing 2026 date remain supported by the master résumé and project bank.
 
@@ -23,7 +24,7 @@ No required public-content gaps remain. Google Scholar, public research links, a
 - A headshot is optional. The initials monogram is a complete fallback and no longer displays an editing prompt.
 - Unavailable project links and an unset Google Scholar profile are omitted instead of rendered as public editing prompts.
 - Contact copy explains how visitors can get in touch.
-- These changes are local until a deployment is requested.
+- Publishing the coordinated resume and website branding update is authorized. The website PDF must remain identical to the compiled canonical master resume.
 
 ## Validation
 
