@@ -13,19 +13,14 @@ function VideoPipeline() {
   )
 }
 
-function SignalPipeline() {
-  const signals = ['ECG', 'EMG', 'GSR', 'HR', 'RESP', 'EOG', 'TEMP']
+function GlmPipeline() {
   return (
-    <div className="signal-diagram" role="img" aria-label="Physiological signal classification pipeline">
-      <div className="signal-diagram__inputs">
-        {signals.map((signal) => <span key={signal}>{signal}</span>)}
-      </div>
+    <div className="analysis-diagram" role="img" aria-label="Phase 1 statistical workflow: data cleaning, generalized linear modeling, and association analysis">
+      <div className="diagram-node">DATA<br />CLEANING</div>
       <span className="diagram-arrow" aria-hidden="true">→</span>
-      <div className="diagram-node diagram-node--wide">FEATURE<br />PIPELINE</div>
+      <div className="diagram-node">GLM<br />ANALYSIS</div>
       <span className="diagram-arrow" aria-hidden="true">→</span>
-      <div className="diagram-node">MODEL</div>
-      <span className="diagram-arrow" aria-hidden="true">→</span>
-      <div className="diagram-node diagram-node--accent">STRESS<br />CLASS</div>
+      <div className="diagram-node diagram-node--accent">ASSOCIATIONS</div>
     </div>
   )
 }
@@ -75,7 +70,8 @@ function StatisticsPanel() {
 
 export function TechnicalDiagram({ type }) {
   if (type === 'video') return <VideoPipeline />
-  if (type === 'signals') return <SignalPipeline />
+  if (type === 'glm') return <GlmPipeline />
   if (type === 'cloud') return <CloudPipeline />
-  return <StatisticsPanel />
+  if (type === 'statistics') return <StatisticsPanel />
+  return null
 }

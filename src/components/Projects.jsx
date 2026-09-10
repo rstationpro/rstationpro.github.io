@@ -10,7 +10,7 @@ export function Projects() {
           index="03"
           eyebrow="SELECTED WORK"
           title="Research questions, implemented systems, reproducible analysis."
-          description="Selected work across multimodal AI, physiological data, cloud computing, and statistical modeling."
+          description="Selected work across multimodal AI, driving-behavior research, cloud computing, and statistical modeling."
           inverted
           headingId="projects-heading"
         />

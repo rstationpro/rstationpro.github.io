@@ -36,9 +36,8 @@ export function Hero() {
             {profile.headshot ? (
               <img src={profile.headshot} alt={`Professional portrait of ${profile.name}`} />
             ) : (
-              <div className="portrait-placeholder" aria-label="Headshot placeholder">
+              <div className="portrait-monogram" role="img" aria-label={`${profile.name} monogram`}>
                 <span>{profile.initials}</span>
-                <small>PORTRAIT / OPTIONAL</small>
               </div>
             )}
           </div>

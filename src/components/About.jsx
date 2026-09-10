@@ -1,4 +1,4 @@
-import { about } from '../data/portfolio'
+import { about, profile } from '../data/portfolio'
 import { SectionHeading } from './SectionHeading'
 
 export function About() {
@@ -25,7 +25,7 @@ export function About() {
               <span aria-hidden="true">$</span> whoami
             </div>
             <div className="identity-panel__body">
-              <p><strong>Rongzhe Zhao</strong></p>
+              <p><strong>{profile.name}</strong></p>
               <p>PhD Student @ GWU</p>
               <div className="identity-panel__rule" />
               <p className="identity-panel__key">interests:</p>

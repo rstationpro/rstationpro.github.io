@@ -2,6 +2,8 @@ import { ExternalLink } from './ExternalLink'
 import { TechnicalDiagram } from './TechnicalDiagram'
 
 export function Project({ project }) {
+  const links = project.links.filter((link) => link.url)
+
   return (
     <article className="project reveal">
       <header className="project__header">
@@ -23,35 +25,33 @@ export function Project({ project }) {
             <p>{project.contribution}</p>
           </div>
 
-          <div className="project__links" aria-label={`${project.title} links`}>
-            {project.links.map((link) =>
-              link.url ? (
+          {links.length > 0 && (
+            <div className="project__links" aria-label={`${project.title} links`}>
+              {links.map((link) => (
                 <ExternalLink href={link.url} key={link.label}>{link.label}</ExternalLink>
-              ) : (
-                <span className="placeholder-link" key={link.label}>
-                  {link.placeholder}
-                </span>
-              ),
-            )}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="project__technical">
           <TechnicalDiagram type={project.visual} />
 
-          <div className="project__details">
+          <div className={`project__details${project.technologies.length === 0 ? ' project__details--methods-only' : ''}`}>
             <div>
               <h4>Methods</h4>
               <ul>
                 {project.methods.map((method) => <li key={method}>{method}</li>)}
               </ul>
             </div>
-            <div>
-              <h4>Technologies</h4>
-              <div className="tech-list">
-                {project.technologies.map((technology) => <span key={technology}>{technology}</span>)}
+            {project.technologies.length > 0 && (
+              <div>
+                <h4>Technologies</h4>
+                <div className="tech-list">
+                  {project.technologies.map((technology) => <span key={technology}>{technology}</span>)}
+                </div>
               </div>
-            </div>
+            )}
           </div>
         </div>
       </div>

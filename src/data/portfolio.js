@@ -1,5 +1,5 @@
 export const profile = {
-  name: 'Rongzhe Zhao',
+  name: 'Rongzhe (Rob) Zhao',
   preferredName: 'Rongzhe (Rob) Zhao',
   initials: 'RZ',
   title: 'PhD Student in Health Data Science · Machine Learning & AI Researcher',
@@ -15,7 +15,7 @@ export const profile = {
 }
 
 export const about = [
-  'I am a Health Data Science PhD student at George Washington University, trained in statistics and biostatistics and working across machine learning, artificial intelligence, and applied health research.',
+  'I am a Health Data Science PhD student at George Washington University, trained in statistics and biostatistics and working across machine learning, artificial intelligence, and applied health research. I work with Dr. Fang Jin in the Data Discovery Lab.',
   'My approach combines careful study design and statistical reasoning with modern ML workflows. I am especially interested in how multimodal models arrive at decisions, what interpretability evidence can support, and how reliable methods translate to consequential domains such as healthcare.',
 ]
 
@@ -38,7 +38,7 @@ export const researchAreas = [
     index: '03',
     title: 'Machine Learning for Healthcare',
     description:
-      'Applying statistical learning and machine learning to biomedical, physiological, and health data with attention to study design, reproducibility, and decision relevance.',
+      'Applying statistical learning and machine learning to biomedical and health data with attention to study design, reproducibility, and decision relevance.',
     focus: ['biomedical data', 'predictive modeling', 'statistical learning'],
   },
 ]
@@ -81,37 +81,33 @@ export const projects = [
     contribution:
       'Built a 61-paper literature map, systematically coded 48 core studies, and organized methods across behavioral, evidence-level, and mechanism-level explanation.',
     visual: 'video',
-    links: [
-      { label: 'GitHub', url: null, placeholder: '[ADD GITHUB URL]' },
-      { label: 'Paper', url: null, placeholder: '[ADD PAPER LINK]' },
-    ],
+    links: [],
   },
   {
     index: 'P/02',
-    title: 'Physiological Signals & Driving Stress Classification',
-    status: '[ADD PROJECT STATUS]',
+    title: 'Driving Behavior & Violation Analysis',
+    status: 'Phase 1 · Statistical analysis',
     context:
-      'A multimodal classification setting that combines physiological streams—including ECG, EMG, GSR, heart rate, respiration, EOG, and temperature—to study driving stress.',
+      'The analysis focused on relationships between driving behaviors and violations.',
     description:
-      'Reserved for a detailed account of the signal-processing, feature-engineering, modeling, and evaluation workflow.',
-    methods: ['[ADD PREPROCESSING]', '[ADD FEATURE PIPELINE]', '[ADD MODEL]', '[ADD EVALUATION]'],
-    technologies: ['[ADD VERIFIED TECHNOLOGIES]'],
-    contribution: '[ADD PERSONAL CONTRIBUTION AND VERIFIED RESULT]',
-    visual: 'signals',
-    links: [
-      { label: 'GitHub', url: null, placeholder: '[ADD GITHUB URL]' },
-      { label: 'Report', url: null, placeholder: '[ADD REPORT LINK]' },
-    ],
+      'Data cleaning and generalized linear modeling for a confidential driving-behavior study.',
+    methods: ['Data cleaning', 'Generalized linear models (GLMs)', 'Association analysis'],
+    technologies: [],
+    contribution:
+      'Participated in Phase 1 statistical analysis, cleaning the dataset and applying generalized linear models to examine associations between driving behaviors and violations.',
+    visual: 'glm',
+    links: [],
   },
   {
     index: 'P/03',
     title: 'Distributed SNP Annotation on AWS',
     status: 'Team course project · 2026',
     context:
-      'A distributed bioinformatics workflow for uploading SNP variants, running complementary annotations asynchronously, tracking job state, and returning merged results.',
+      'A cloud-computing course project applying AWS tools to a working system for uploading SNP variants, running annotations asynchronously, tracking job state, and returning merged results.',
     description:
       'The system used a Flask interface on EC2 with S3 storage, SNS/SQS fan-out, queue-driven workers, and DynamoDB status tracking.',
     methods: [
+      'System architecture design',
       'Asynchronous job orchestration',
       'Regional gene annotation',
       'Variant-effect annotation',
@@ -119,14 +115,13 @@ export const projects = [
     ],
     technologies: ['Python', 'Flask', 'EC2', 'S3', 'SNS/SQS', 'DynamoDB', 'IAM'],
     contribution:
-      'Participated in the team project and development/deployment of the AWS-hosted application. [ADD COMPONENT-LEVEL CONTRIBUTION]',
+      'Co-designed the full system with teammates, applying AWS tools learned in class to develop a working SNP annotation application.',
     visual: 'cloud',
     links: [
       {
         label: 'Team repository',
         url: 'https://github.com/QixShawnChen/gene_annotation_cloud_computing_tool',
       },
-      { label: 'Report', url: null, placeholder: '[ADD REPORT LINK]' },
     ],
   },
   {
@@ -148,7 +143,6 @@ export const projects = [
       'Built the reproducible analysis pipeline; model comparison supported the negative binomial specification (dispersion 4.39; likelihood-ratio p < 0.001; ΔAIC 177.5).',
     visual: 'statistics',
     links: [
-      { label: 'GitHub', url: null, placeholder: '[ADD GITHUB URL]' },
       {
         label: 'Publication',
         url: 'https://doi.org/10.1177/24730114261450079',
